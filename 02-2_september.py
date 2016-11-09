@@ -4,7 +4,7 @@
 import datetime as dt
 from matplotlib import pyplot as plt
 
-file = open("meteo/data09-2016.csv", "r")
+file = open("data09-2016.csv", "r")
 file.readline()
 file.readline()
 data = file.read().replace(";", " ").split()
