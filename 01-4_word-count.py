@@ -1,7 +1,7 @@
 #!/usr/bin/python
 # Emil Wilawer 2016.10.19
 # Counts quantity of every word in given text
-text = open('cwiczenie1.txt', 'r').read()
+text = open('01-4.txt', 'r').read()
 words = text.split()
 dictionary = {}
 for word in words:
