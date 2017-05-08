@@ -1,0 +1,56 @@
+PDS_VERSION_ID                     = PDS3                                     
+                                                                              
+RECORD_TYPE                        = "FIXED_LENGTH"                           
+RECORD_BYTES                       = 79                                       
+FILE_RECORDS                       = 115                                      
+                                                                              
+^TABLE                             = "magphaseref.tab"                        
+                                                                              
+DATA_SET_ID                        = "EAR-A-COMPIL-3-MAGPHASE-V1.0"           
+PRODUCT_NAME                       = "REFERENCES FOR MAGNITUDE-PHASE          
+        RELATIONS"                                                            
+PRODUCT_ID                         = "MAGPHASEREF_TAB"                        
+INSTRUMENT_HOST_ID                 = "PUBLIT"                                 
+INSTRUMENT_HOST_NAME               = "PUBLISHED LITERATURE"                   
+INSTRUMENT_ID                      = "COMPIL"                                 
+INSTRUMENT_NAME                    = "COMPILATION"                            
+TARGET_NAME                        = "ASTEROID"                               
+TARGET_TYPE                        = "ASTEROID"                               
+START_TIME                         = "N/A"                                    
+STOP_TIME                          = "N/A"                                    
+PRODUCT_CREATION_TIME              = 2010-04-05  /* File uploaded to OLAF */  
+                                                                              
+OBJECT                             = TABLE                                    
+ ROWS                              = 115                                      
+ ROW_BYTES                         = 79                                       
+ INTERCHANGE_FORMAT                = "ASCII"                                  
+ COLUMNS                           = 2                                        
+ DESCRIPTION                       = "Full references for the papers cited in 
+        the file magphase.tab."                                               
+                                                                              
+ OBJECT                            = COLUMN                                   
+  COLUMN_NUMBER                    = 1                                        
+  NAME                             = "REF_CODE"                               
+  DESCRIPTION                      = "The short form of the reference by which
+        it is cited in the file magphase.tab.  If it is a hyphen, this is a   
+        continuation of the previous line."                                   
+  DATA_TYPE                        = "CHARACTER"                              
+  START_BYTE                       = 1                                        
+  BYTES                            = 28                                       
+  FORMAT                           = "A28"                                    
+ END_OBJECT                        = COLUMN                                   
+                                                                              
+ OBJECT                            = COLUMN                                   
+  COLUMN_NUMBER                    = 2                                        
+  NAME                             = "REFERENCE"                              
+  DESCRIPTION                      = "The full reference corresponding to the 
+        reference code.  If REF_CODE is a hyphen, this is a continuation of   
+        the previous line."                                                   
+  DATA_TYPE                        = "CHARACTER"                              
+  START_BYTE                       = 30                                       
+  BYTES                            = 48                                       
+  FORMAT                           = "A48"                                    
+ END_OBJECT                        = COLUMN                                   
+                                                                              
+END_OBJECT                         = TABLE                                    
+END                                                                           

@@ -1,0 +1,29 @@
+PDS_VERSION_ID                     = PDS3                                     
+RECORD_TYPE                        = "STREAM"                                 
+LABEL_REVISION_NOTE                = "2003-04-24  A.C.Raugh    Creation"      
+                                                                              
+OBJECT                             = INSTRUMENT_HOST                          
+  INSTRUMENT_HOST_ID               = "PUBLIT"                                 
+  OBJECT                           = INSTRUMENT_HOST_INFORMATION              
+    INSTRUMENT_HOST_NAME           = "PUBLISHED LITERATURE"                   
+    INSTRUMENT_HOST_TYPE           = "EARTH BASED"                            
+    INSTRUMENT_HOST_DESC           = "                                        
+                                                                              
+                                                                              
+  Instrument Host Overview                                                    
+  ========================                                                    
+  The PUBLISHED_LITERATURE designation for INSTRUMENT_HOST is used when the   
+  data presented in a given data set were collected entirely by referencing   
+  results published in the literature. The data set description or product    
+  labels will provide the explicit references, which in turn should provide   
+  details of the original observing campaigns, data reduction, or criteria for
+  inclusion for each datum reported in the PDS data set."                     
+                                                                              
+  END_OBJECT                       = INSTRUMENT_HOST_INFORMATION              
+                                                                              
+  OBJECT                           = INSTRUMENT_HOST_REFERENCE_INFO           
+    REFERENCE_KEY_ID               = "N/A"                                    
+  END_OBJECT                       = INSTRUMENT_HOST_REFERENCE_INFO           
+                                                                              
+END_OBJECT                         = INSTRUMENT_HOST                          
+END                                                                           

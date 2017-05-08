@@ -1,0 +1,214 @@
+PDS_VERSION_ID                     = PDS3                                     
+                                                                              
+RECORD_TYPE                        = "FIXED_LENGTH"                           
+RECORD_BYTES                       = 142                                      
+FILE_RECORDS                       = 564                                      
+                                                                              
+^TABLE                             = "magphase.tab"                           
+                                                                              
+DATA_SET_ID                        = "EAR-A-COMPIL-3-MAGPHASE-V1.0"           
+PRODUCT_NAME                       = "ASTEROID MAGNITUDE-PHASE RELATIONS"     
+PRODUCT_ID                         = "MAGPHASE_TAB"                           
+INSTRUMENT_HOST_ID                 = "PUBLIT"                                 
+INSTRUMENT_HOST_NAME               = "PUBLISHED LITERATURE"                   
+INSTRUMENT_ID                      = "COMPIL"                                 
+INSTRUMENT_NAME                    = "COMPILATION"                            
+TARGET_NAME                        = "ASTEROID"                               
+TARGET_TYPE                        = "ASTEROID"                               
+START_TIME                         = 1978-04-28                               
+STOP_TIME                          = 2008-06-30                               
+PRODUCT_CREATION_TIME              = 2010-06-29  /* File uploaded to OLAF */  
+                                                                              
+OBJECT                             = TABLE                                    
+ ROWS                              = 564                                      
+ ROW_BYTES                         = 142                                      
+ INTERCHANGE_FORMAT                = "ASCII"                                  
+ COLUMNS                           = 15                                       
+ DESCRIPTION                       = "Magnitude-phase relations for selected  
+        asteroids compiled at Kharkiv University by Shevchenko et al."        
+                                                                              
+ OBJECT                            = COLUMN                                   
+  COLUMN_NUMBER                    = 1                                        
+  NAME                             = "AST_NUMBER"                             
+  DESCRIPTION                      = "Asteroid number"                        
+  DATA_TYPE                        = "ASCII_INTEGER"                          
+  START_BYTE                       = 1                                        
+  BYTES                            = 6                                        
+  FORMAT                           = "I6"                                     
+  MISSING_CONSTANT                 = 0                                        
+ END_OBJECT                        = COLUMN                                   
+                                                                              
+ OBJECT                            = COLUMN                                   
+  COLUMN_NUMBER                    = 2                                        
+  NAME                             = "AST_NAME"                               
+  DESCRIPTION                      = "Asteroid name."                         
+  DATA_TYPE                        = "CHARACTER"                              
+  START_BYTE                       = 8                                        
+  BYTES                            = 14                                       
+  FORMAT                           = "A14"                                    
+  MISSING_CONSTANT                 = "-"                                      
+ END_OBJECT                        = COLUMN                                   
+                                                                              
+ OBJECT                            = COLUMN                                   
+  COLUMN_NUMBER                    = 3                                        
+  NAME                             = "OBS_DATE"                               
+  DESCRIPTION                      = "UT date of observation"                 
+  DATA_TYPE                        = "DATE"                                   
+  START_BYTE                       = 23                                       
+  BYTES                            = 10                                       
+  FORMAT                           = "A10"                                    
+ END_OBJECT                        = COLUMN                                   
+                                                                              
+ OBJECT                            = COLUMN                                   
+  COLUMN_NUMBER                    = 4                                        
+  NAME                             = "OBS_FRACTIONAL_DAY"                     
+  DESCRIPTION                      = "Observation mid-time in UT fractional   
+        day.  This is the time used for computing the aspect data."           
+  UNIT                             = "DAY"                                    
+  DATA_TYPE                        = "ASCII_REAL"                             
+  START_BYTE                       = 34                                       
+  BYTES                            = 3                                        
+  FORMAT                           = "F3.1"                                   
+ END_OBJECT                        = COLUMN                                   
+                                                                              
+ OBJECT                            = COLUMN                                   
+  COLUMN_NUMBER                    = 5                                        
+  NAME                             = "ECLIPTIC_LONGITUDE"                     
+  DESCRIPTION                      = "J2000.0 ecliptic longitude of the       
+        asteroid"                                                             
+  UNIT                             = "DEGREE"                                 
+  DATA_TYPE                        = "ASCII_REAL"                             
+  START_BYTE                       = 38                                       
+  BYTES                            = 6                                        
+  FORMAT                           = "F6.2"                                   
+ END_OBJECT                        = COLUMN                                   
+                                                                              
+ OBJECT                            = COLUMN                                   
+  COLUMN_NUMBER                    = 6                                        
+  NAME                             = "ECLIPTIC_LATITUDE"                      
+  DESCRIPTION                      = "J2000.0 ecliptic latitude of the        
+        asteroid"                                                             
+  UNIT                             = "DEGREE"                                 
+  DATA_TYPE                        = "ASCII_REAL"                             
+  START_BYTE                       = 45                                       
+  BYTES                            = 6                                        
+  FORMAT                           = "F6.2"                                   
+ END_OBJECT                        = COLUMN                                   
+                                                                              
+ OBJECT                            = COLUMN                                   
+  COLUMN_NUMBER                    = 7                                        
+  NAME                             = "HELIOCENTRIC_DIST"                      
+  DESCRIPTION                      = "Heliocentric distance of the asteroid"  
+  UNIT                             = "ASTRONOMICAL_UNIT"                      
+  DATA_TYPE                        = "ASCII_REAL"                             
+  START_BYTE                       = 52                                       
+  BYTES                            = 6                                        
+  FORMAT                           = "F6.3"                                   
+ END_OBJECT                        = COLUMN                                   
+                                                                              
+ OBJECT                            = COLUMN                                   
+  COLUMN_NUMBER                    = 8                                        
+  NAME                             = "GEOCENTRIC_DIST"                        
+  DESCRIPTION                      = "Geocentric distance of the asteroid"    
+  UNIT                             = "ASTRONOMICAL_UNIT"                      
+  DATA_TYPE                        = "ASCII_REAL"                             
+  START_BYTE                       = 59                                       
+  BYTES                            = 6                                        
+  FORMAT                           = "F6.3"                                   
+ END_OBJECT                        = COLUMN                                   
+                                                                              
+ OBJECT                            = COLUMN                                   
+  COLUMN_NUMBER                    = 9                                        
+  NAME                             = "PHASE_ANGLE"                            
+  DESCRIPTION                      = "Solar phase angle of the asteroid"      
+  UNIT                             = "DEGREE"                                 
+  DATA_TYPE                        = "ASCII_REAL"                             
+  START_BYTE                       = 66                                       
+  BYTES                            = 6                                        
+  FORMAT                           = "F6.2"                                   
+ END_OBJECT                        = COLUMN                                   
+                                                                              
+ OBJECT                            = COLUMN                                   
+  COLUMN_NUMBER                    = 10                                       
+  NAME                             = "U_MAG_CORR"                             
+  DESCRIPTION                      = "U magnitude in the Johnson-Cousins      
+        system for the maximum of the lightcurve, corrected for unit distance 
+        to the Sun and the Earth."                                            
+  UNIT                             = "MAGNITUDE"                              
+  DATA_TYPE                        = "ASCII_REAL"                             
+  START_BYTE                       = 73                                       
+  BYTES                            = 7                                        
+  FORMAT                           = "F7.3"                                   
+  MISSING_CONSTANT                 = -99.999                                  
+ END_OBJECT                        = COLUMN                                   
+                                                                              
+ OBJECT                            = COLUMN                                   
+  COLUMN_NUMBER                    = 11                                       
+  NAME                             = "B_MAG_CORR"                             
+  DESCRIPTION                      = "B magnitude in the Johnson-Cousins      
+        system for the maximum of the lightcurve, corrected for unit distance 
+        to the Sun and the Earth."                                            
+  UNIT                             = "MAGNITUDE"                              
+  DATA_TYPE                        = "ASCII_REAL"                             
+  START_BYTE                       = 81                                       
+  BYTES                            = 7                                        
+  FORMAT                           = "F7.3"                                   
+  MISSING_CONSTANT                 = -99.999                                  
+ END_OBJECT                        = COLUMN                                   
+                                                                              
+ OBJECT                            = COLUMN                                   
+  COLUMN_NUMBER                    = 12                                       
+  NAME                             = "V_MAG_CORR"                             
+  DESCRIPTION                      = "V magnitude in the Johnson-Cousins      
+        system for the maximum of the lightcurve, corrected for unit distance 
+        to the Sun and the Earth."                                            
+  UNIT                             = "MAGNITUDE"                              
+  DATA_TYPE                        = "ASCII_REAL"                             
+  START_BYTE                       = 89                                       
+  BYTES                            = 7                                        
+  FORMAT                           = "F7.3"                                   
+  MISSING_CONSTANT                 = -99.999                                  
+ END_OBJECT                        = COLUMN                                   
+                                                                              
+ OBJECT                            = COLUMN                                   
+  COLUMN_NUMBER                    = 13                                       
+  NAME                             = "R_MAG_CORR"                             
+  DESCRIPTION                      = "R magnitude in the Johnson-Cousins      
+        system for the maximum of the lightcurve, corrected for unit distance 
+        to the Sun and the Earth."                                            
+  UNIT                             = "MAGNITUDE"                              
+  DATA_TYPE                        = "ASCII_REAL"                             
+  START_BYTE                       = 97                                       
+  BYTES                            = 7                                        
+  FORMAT                           = "F7.3"                                   
+  MISSING_CONSTANT                 = -99.999                                  
+ END_OBJECT                        = COLUMN                                   
+                                                                              
+ OBJECT                            = COLUMN                                   
+  COLUMN_NUMBER                    = 14                                       
+  NAME                             = "I_MAG_CORR"                             
+  DESCRIPTION                      = "I magnitude in the Johnson-Cousins      
+        system for the maximum of the lightcurve, corrected for unit distance 
+        to the Sun and the Earth."                                            
+  UNIT                             = "MAGNITUDE"                              
+  DATA_TYPE                        = "ASCII_REAL"                             
+  START_BYTE                       = 105                                      
+  BYTES                            = 7                                        
+  FORMAT                           = "F7.3"                                   
+  MISSING_CONSTANT                 = -99.999                                  
+ END_OBJECT                        = COLUMN                                   
+                                                                              
+ OBJECT                            = COLUMN                                   
+  COLUMN_NUMBER                    = 15                                       
+  NAME                             = "REF_CODE"                               
+  DESCRIPTION                      = "Short reference for the reported        
+        observation.  The full references are given in the file               
+        magphaseref.tab."                                                     
+  DATA_TYPE                        = "CHARACTER"                              
+  START_BYTE                       = 113                                      
+  BYTES                            = 28                                       
+  FORMAT                           = "A28"                                    
+ END_OBJECT                        = COLUMN                                   
+                                                                              
+END_OBJECT                         = TABLE                                    
+END                                                                           
